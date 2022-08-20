@@ -2,6 +2,8 @@
 
 import 'package:flutter/material.dart';
 
+import '../Contact_Us/contactUs.dart';
+
 class ISO extends StatelessWidget {
   const ISO({super.key});
 
@@ -194,39 +196,47 @@ class ISO extends StatelessWidget {
                     ),
                     Padding(
                       padding: const EdgeInsets.only(top: 25, right: 10),
-                      child: Container(
-                          height: 50,
-                          width: 165,
-                          decoration: BoxDecoration(
-                              color: const Color.fromARGB(255, 203, 198, 198),
-                              boxShadow: const [
-                                BoxShadow(
-                                    color: Color.fromARGB(255, 72, 72, 72),
-                                    blurRadius: 15)
+                      child: GestureDetector(
+                        onTap: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: ((context) => const ContactUs())));
+                        },
+                        child: Container(
+                            height: 50,
+                            width: 165,
+                            decoration: BoxDecoration(
+                                color: const Color.fromARGB(255, 203, 198, 198),
+                                boxShadow: const [
+                                  BoxShadow(
+                                      color: Color.fromARGB(255, 72, 72, 72),
+                                      blurRadius: 15)
+                                ],
+                                borderRadius: BorderRadius.circular(5)),
+                            child: Row(
+                              children: const [
+                                Padding(
+                                  padding: EdgeInsets.only(left: 13),
+                                  child: Icon(
+                                    Icons.contact_phone,
+                                    size: 23,
+                                    color: Colors.purple,
+                                  ),
+                                ),
+                                Padding(
+                                  padding: EdgeInsets.only(left: 5),
+                                  child: Text(
+                                    "CONTACT US",
+                                    style: TextStyle(
+                                        color: Colors.purple,
+                                        fontWeight: FontWeight.bold,
+                                        fontSize: 17),
+                                  ),
+                                ),
                               ],
-                              borderRadius: BorderRadius.circular(5)),
-                          child: Row(
-                            children: const [
-                              Padding(
-                                padding: EdgeInsets.only(left: 13),
-                                child: Icon(
-                                  Icons.contact_phone,
-                                  size: 23,
-                                  color: Colors.purple,
-                                ),
-                              ),
-                              Padding(
-                                padding: EdgeInsets.only(left: 5),
-                                child: Text(
-                                  "CONTACT US",
-                                  style: TextStyle(
-                                      color: Colors.purple,
-                                      fontWeight: FontWeight.bold,
-                                      fontSize: 17),
-                                ),
-                              ),
-                            ],
-                          )),
+                            )),
+                      ),
                     ),
                   ],
                 ),

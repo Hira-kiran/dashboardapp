@@ -157,7 +157,7 @@ class ProfileDetails extends StatelessWidget {
                       ),
                     ),
                     Padding(
-                      padding: EdgeInsets.only(left: 10, top: 25),
+                      padding: EdgeInsets.only(left: 10, top: 15),
                       child: Text(
                         "COMPLAINS",
                         style: TextStyle(color: Colors.white, fontSize: 22),
