@@ -25,11 +25,8 @@ class WelcomeScreen extends StatelessWidget {
               ),
             ),
             child: Padding(
-              padding: const EdgeInsets.only(top: 290),
-              child: Image.network(
-                "https://cdn0.iconfinder.com/data/icons/chat-man-holding-words/599/man-bubble-speech-chat-talk-balloon_154-512.png",
-              ),
-            ),
+                padding: const EdgeInsets.only(top: 290),
+                child: Image.asset("images/welcome_icon.webp")),
           ),
           const Padding(
             padding: EdgeInsets.only(top: 40, left: 25, right: 25),

@@ -35,8 +35,8 @@ class EditProfile extends StatelessWidget {
                     )),
                 child: Column(
                   children: [
-                    Image.network(
-                      "https://img.myloview.com/posters/add-create-profile-photo-icon-vector-for-social-media-user-400-265803143.jpg",
+                    Image.asset(
+                      "images/editprofile.jpg",
                       height: 200,
                     ),
                     const Text(

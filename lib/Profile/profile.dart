@@ -35,12 +35,11 @@ class Profile extends StatelessWidget {
               child: Column(
                 children: [
                   Padding(
-                    padding: const EdgeInsets.only(top: 20),
-                    child: Image.network(
-                      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6aMSd6UXIgSwBn5c9fvTlZwMjPjeP7vGfnSXXMy68evP4I6USVcPZqq5OYSbxUAtdbEk&usqp=CAU",
-                      height: 150,
-                    ),
-                  ),
+                      padding: const EdgeInsets.only(top: 20),
+                      child: Image.asset(
+                        "images/profile.png",
+                        height: 150,
+                      )),
                   const Text(
                     "Name Here",
                     style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
